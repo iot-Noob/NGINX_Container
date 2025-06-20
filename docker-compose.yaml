@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nginx-talha
+    hostname: nginx.talha.pk
+    dns:
+      - 192.168.100.33
+      - 1.1.1.1 
+      - 8.8.8.8
+    networks:
+      - a-class-bridge
+    ports:
+      - "80:80"
+      - "443:443"
+      - "4000:4000"
+      - "3000:3000"
+      - "8080:8080"
+    volumes:
+      - "F:/Server backup_2025 _nginx_BIND/Nginx2/Nginx-Config/config:/etc/nginx"
+      - "F:/Server backup_2025 _nginx_BIND/Nginx2/Nginx-Config/www:/var/www"
+      - "F:/Server backup_2025 _nginx_BIND/Nginx2/Nginx-Config/ssl:/etc/ssl"
+      - "F:/Server backup_2025 _nginx_BIND/Nginx2/Nginx-Config/vassl:/usr/lib/ssl"
+
+networks:
+  a-class-bridge:
+    external: true

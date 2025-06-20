@@ -1,0 +1,17 @@
+*.key
+*.csr
+*.crt
+*.pem
+*.der
+*.pfx
+*.p12
+*.srl
+*.jks
+*.keystore
+*.truststore
+*.cnf
+certs/
+ca/
+crt/
+key/
+Nginx-Config/vassl/
