@@ -12,6 +12,6 @@ RUN apt update && apt install -y \
     nano vim \
     && apt clean
 
-EXPOSE 80 443 8080 3000 4000
+EXPOSE 80 443 8080 3000 4000 8443
 
 CMD ["nginx", "-g", "daemon off;"]
