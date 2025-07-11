@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="pastel">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>502 Bad Gateway</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      plugins: [window.daisyui],
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/daisyui@latest"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-100 to-pink-100">
+
+  <div class="text-center max-w-md p-6 bg-white shadow-2xl rounded-2xl">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-28 h-28 mx-auto text-error" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.364 5.636L5.636 18.364M5.636 5.636l12.728 12.728" />
+    </svg>
+    <h1 class="text-5xl font-bold mt-4 text-error">502</h1>
+    <p class="mt-2 text-lg text-gray-700">Bad Gateway</p>
+    <p class="text-sm mt-1 text-gray-500">The server was acting as a gateway or proxy and received an invalid response.</p>
+
+    <div class="mt-6">
+      <a href="/" class="btn btn-primary rounded-full px-8">Go Home</a>
+    </div>
+  </div>
+
+</body>
+</html>
+

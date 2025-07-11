@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="pastel">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 Not Found</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      plugins: [window.daisyui],
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/daisyui@latest"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-br from-sky-100 to-blue-200">
+
+  <div class="text-center max-w-md p-6 bg-white shadow-xl rounded-2xl">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-28 h-28 mx-auto text-warning" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4m0 4h.01m-6.938 4h13.856C18.4 20 20 18.4 20 16.5V7.5C20 5.6 18.4 4 16.5 4h-9C5.6 4 4 5.6 4 7.5v9C4 18.4 5.6 20 7.5 20z" />
+    </svg>
+    <h1 class="text-5xl font-bold mt-4 text-warning">404</h1>
+    <p class="mt-2 text-lg text-gray-700">Page Not Found</p>
+    <p class="text-sm mt-1 text-gray-500">Sorry, the page you are looking for doesn't exist or has been moved.</p>
+
+    <div class="mt-6">
+      <a href="/" class="btn btn-outline btn-warning rounded-full px-8">Go Home</a>
+    </div>
+  </div>
+
+</body>
+</html>
+
